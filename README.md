@@ -51,6 +51,11 @@ USE_OAUTH=true
 OAUTH_CLIENT_ID=your-client-id
 OAUTH_CLIENT_SECRET=your-client-secret
 EMAIL_USER=your-email@gmail.com
+EMAIL_IMAP_HOST=imap.gmail.com
+EMAIL_MAILBOX=INBOX
+
+# Optional: Specify custom attachments folder (defaults to ./commsec-attachments)
+ATTACHMENTS_DIR=/path/to/your/attachments/folder
 ```
 
 ### 4. Build and Run
@@ -77,6 +82,12 @@ Scans emails since the last scan date (tracked in `scan_metadata.csv`).
 ```bash
 npm start 2024-01-01 2024-12-31
 ```
+
+## Output
+
+Downloaded attachments are saved to the folder specified by the `ATTACHMENTS_DIR` environment variable. If not set, defaults to `./commsec-attachments/` in the current directory.
+
+Metadata tracking is stored in `scan_metadata.csv` within the same folder.
 
 ### Using App Password (Not Recommended)
 

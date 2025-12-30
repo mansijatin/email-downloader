@@ -10,7 +10,7 @@ import { OAuthManager } from "./oauth.js";
 dotenv.config();
 
 async function scanMailAttachments(startDate?: string, endDate?: string): Promise<{ processedAttachments: number }> {
-  const tempDir = path.join(process.cwd(), "commsec-attachments");
+  const tempDir = process.env.ATTACHMENTS_DIR || path.join(process.cwd(), "commsec-attachments");
   if (!fs.existsSync(tempDir)) {
     fs.mkdirSync(tempDir);
   }
