@@ -1,0 +1,23 @@
+{
+  "name": "mail-attachment-downloader",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^143.0.0",
+    "imapflow": "^1.0.189",
+    "mailparser": "^3.7.1",
+    "open": "^10.2.0",
+    "pdf-parse": "^1.1.1",
+    "tesseract.js": "^5.0.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
