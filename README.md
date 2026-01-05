@@ -1,4 +1,3 @@
-
 # Mail Attachment Downloader
 
 A secure email attachment downloader that uses **OAuth 2.0** for authentication. Scans emails for attachments containing 'CommSec', downloads them, and extracts data from PDFs and images.
